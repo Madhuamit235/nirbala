@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .contact-form:hover {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #b74b4b; /* Primary color */
+        }
+
+        .contact-form label {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 18px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #b74b4b; /* Focus border color */
+        }
+
+        .contact-form button {
+            background-color: #b74b4b; /* Button color */
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #9e3f3f; /* Hover button color */
+        }
+
+        .contact-form .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-form .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #b74b4b; /* Social links color */
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .contact-form .social-links a:hover {
+            color: #9e3f3f; /* Hover color change for social links */
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

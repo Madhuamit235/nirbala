@@ -39,7 +39,7 @@
             color: #333;
             font-size: 30px;
             margin-bottom: 25px;
-            color: #b74b4b; /* Primary color */
+            color: #b74b4b;
         }
 
         .contact-form label {
@@ -63,11 +63,11 @@
 
         .contact-form input:focus,
         .contact-form textarea:focus {
-            border-color: #b74b4b; /* Focus border color */
+            border-color: #b74b4b;
         }
 
         .contact-form button {
-            background-color: #b74b4b; /* Button color */
+            background-color: #b74b4b;
             color: white;
             border: none;
             padding: 15px;
@@ -79,7 +79,7 @@
         }
 
         .contact-form button:hover {
-            background-color: #9e3f3f; /* Hover button color */
+            background-color: #9e3f3f;
         }
 
         .contact-form .social-links {
@@ -90,13 +90,13 @@
         .contact-form .social-links a {
             margin: 0 10px;
             font-size: 24px;
-            color: #b74b4b; /* Social links color */
+            color: #b74b4b;
             text-decoration: none;
             transition: 0.3s ease;
         }
 
         .contact-form .social-links a:hover {
-            color: #9e3f3f; /* Hover color change for social links */
+            color: #9e3f3f;
         }
 
         @media screen and (max-width: 768px) {
@@ -107,37 +107,32 @@
         }
     </style>
 </head>
-<form
-  action="https://formspree.io/f/xvggjddp"
-  method="POST">
 <body>
     <div class="container">
-        <div class="contact-form">
+        <form action="https://formspree.io/f/xvggjddp" method="POST" class="contact-form">
             <h2>Contact Me</h2>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
+            <button type="submit">Send Message</button>
+
             <div class="social-links">
                 <a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
             </div>
-        </div>
+        </form>
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</form>
 </body>
 </html>
